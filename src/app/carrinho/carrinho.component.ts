@@ -35,6 +35,7 @@ export class CarrinhoComponent implements OnInit {
   }
 
   comprar() {
+    alert("Pedido concluído com sucesso!")
     this.carrinhoService.limparCarrinho()
     this.router.navigate(["/produtos"])
   }
