@@ -7,36 +7,42 @@
         <nav class="main-header__menu">
             <ul>
               <li>
-                <a>Produtos</a>
+                <a routerLink="produtos">
+                  Produtos
+                </a>
               </li>
               <li>
-                  <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <a routerLink="/carrinho" >Carrinho</a>
-                <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+                <a routerLink="/carrinho" >
+                  Carrinho
+                  <span class="count-cart">
+                    <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                  <span class="badge-carrinho">{{ carrinhoService.obtemCarrinho().length }}</span>
+                  </span>
+                </a>
               </li>
               <li>
-                <a>
+                <a routerLink="contato">
                   Contato
                   
                 </a>
               </li>
               <li>
-                <a>
+                <a routerLink="#"> 
                   <i class="fa-brands fa-facebook-f"></i>
                 </a>
               </li>
               <li>
-                <a>
+                <a routerLink="#">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
               <li>
-                <a>
+                <a routerLink="#">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
               <li>
-                <a>
+                <a routerLink="#">
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
               </li>

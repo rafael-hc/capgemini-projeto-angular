@@ -26,7 +26,14 @@
 
 .main-header__menu ul {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
+}
+
+.main-header__menu ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main-header__menu a {
@@ -50,10 +57,28 @@
     flex: 1;
 }
 
+.count-cart {
+    width: 2rem;
+    height: 2rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
 .badge-carrinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.75rem;
     background-color: var(--dark-blue);
-    padding: 5px 10px;    
-    border-radius: 4px;
+    border-radius: 50%;
     color: white;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
 }
 
